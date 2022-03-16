@@ -1,0 +1,200 @@
+﻿@model Interesse
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h1>Iniciativa Saúde da Cidade</h1>
+            <p>
+                Texto sobre vida saudável: Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae
+                legendos
+                at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit.
+            </p>
+            <p>
+                Texto sobre vida iniciativa: Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae
+                legendos
+                at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit.
+            </p>
+        </div>
+        <div class="col-md-6 ms-3">
+            <img src="./img/saude da cidade.jpg" class="rounded" alt="saúde" width="500px">
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row mt-3">
+        <div class="col-md-6 border border-dark rounded" id="frm">
+            <h2>Entre em contato!:</h2>
+            <p>Nos mande uma mensagem e fique por dentro de nossos eventos</p>
+
+            <form method="POST" id="frmCadastro">
+                <div class="row">
+                    <div class="col-md-2">
+                        <label asp-for="Nome">Nome:</label>
+                    </div>
+                    <div class="col-md-10">
+                        <input asp-for="Nome" id="nome"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        <label asp-for="Email">Email:</label>
+                    </div>
+                    <div class="col-md-10">
+                        <input asp-for="Email" id="email"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        <label asp-for="Mensagem">Mensagem (opcional):</label>
+                    </div>
+                    <div class="col-md-10">
+                        <textarea asp-for="Mensagem" id="mensagem"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <input type="submit" value="Enviar" id="btnEnvio" class="mb-3" />
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-4">
+                    <figure class="figure">
+                        <img src="./img/agenda icon.png" class="figure-img img-fluid" alt="agenda" width="150px">
+                        <figcaption class="figure-caption text-center">
+                            <a href="#" data-toggle="modal" data-target="#AgendaDeEventos">Agenda de eventos</a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-4">
+                    <figure class="figure">
+                        <img src="./img/dicas icon.png" class="figure-img img-fluid" alt="dicas" width="150px">
+                        <figcaption class="figure-caption text-center">
+                            <a href="#" data-toggle="modal" data-target="#VidaSaudavel">Dicas de vida saudável</a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-4">
+                    <figure class="figure">
+                        <img src="./img/apoiadores icon.png" class="figure-img img-fluid" alt="apoiadores"
+                            width="150px">
+                        <figcaption class="figure-caption text-center">
+                            <a href="#" data-toggle="modal" data-target="#Apoiadores">Apoiadores</a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="AgendaDeEventos" tabindex="-1" role="dialog" aria-labelledby="exampleAgendaDeEventos"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleAgendaDeEventos">Agenda de eventos</h5>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <h3>10/10/2021 - Evento 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div>
+                    <h3>10/10/2021 - Evento 2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div>
+                    <h3>10/10/2021 - Evento 3</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="VidaSaudavel" tabindex="-1" role="dialog" aria-labelledby="exampleAgendaDeEventos"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleAgendaDeEventos">Dicas de vida saudável</h5>
+            </div>
+            <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="Apoiadores" tabindex="-1" role="dialog" aria-labelledby="exampleAgendaDeEventos"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleAgendaDeEventos">Apoiadores</h5>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="./img/empresa.png" alt="empresa" width="120px">
+                    </div>
+                    <div class="col-md-8">
+                        <h5>Empresa 1</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="./img/empresa.png" alt="empresa" width="120px">
+                    </div>
+                    <div class="col-md-8">
+                        <h5>Empresa 2</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="./img/empresa.png" alt="empresa" width="120px">
+                    </div>
+                    <div class="col-md-8">
+                        <h5>Empresa 3</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="./img/empresa.png" alt="empresa" width="120px">
+                    </div>
+                    <div class="col-md-8">
+                        <h5>Empresa 4</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
